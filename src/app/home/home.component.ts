@@ -14,19 +14,17 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
         // Init your component properties here.
+        if (!flashlight.isAvailable()) {
+            alert("Flashlight is not available");
+        }
     }
 
     public onTap() {
-        if (flashlight.isAvailable()) {
-            this.isOn = !this.isOn;
-            if (this.isOn) {
-                flashlight.on();
-            } else {
-                flashlight.off();
-            }
+        this.isOn = !this.isOn;
+        if (this.isOn) {
+            flashlight.on();
         } else {
-            alert("Flashlight is not available");
+            flashlight.off();
         }
-
     }
 }
