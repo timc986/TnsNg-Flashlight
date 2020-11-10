@@ -1,5 +1,6 @@
 # TnsNg-Flashlight
 My first mobile app project with NativeScript and Angular
+
 To get a hands on experience from the basics such as set up and config to build and publish
 
 NativeScript 6.5
