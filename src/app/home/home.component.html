@@ -1,0 +1,9 @@
+<!-- <ActionBar>
+    <Label text="Flashlight"></Label>
+</ActionBar> -->
+
+<GridLayout>
+    <!-- Add your page content here -->
+    <Button *ngIf="isOn" text="Turn Off" (tap)="onTap($event)"></Button>
+    <Button *ngIf="!isOn" text="Turn On" (tap)="onTap($event)"></Button>
+</GridLayout>
