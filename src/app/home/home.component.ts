@@ -3,7 +3,8 @@ import * as flashlight from "nativescript-flashlight";
 
 @Component({
     selector: "Home",
-    templateUrl: "./home.component.html"
+    templateUrl: "./home.component.html",
+    styleUrls: ['./home.component.scss', "./home-common.scss"]
 })
 export class HomeComponent implements OnInit {
     public isOn = false;
