@@ -1,6 +1,6 @@
 # TnsNg-Flashlight
 
-My first mobile app project built with NativeScript and Angular
+My first cross-platform native mobile app project built with NativeScript and Angular
 
 ## Features
 
