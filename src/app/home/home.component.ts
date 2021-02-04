@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import * as flashlight from "nativescript-flashlight";
 import { Color, Page } from "tns-core-modules/ui/page";
+import { isAndroid } from 'tns-core-modules/platform';
 
 @Component({
     selector: "Home",
@@ -18,8 +19,10 @@ export class HomeComponent implements OnInit {
         // this.page.backgroundColor = '#2c303a';
         // this.page.backgroundSpanUnderStatusBar = true;
         // this.page.actionBarHidden = false;
-        this.page.androidStatusBarBackground = new Color("#383534");
-        
+        if (isAndroid) {
+            this.page.androidStatusBarBackground = new Color("#383534");
+        }
+
         // Init your component properties here.
         if (!flashlight.isAvailable()) {
             alert("Flashlight is not available");

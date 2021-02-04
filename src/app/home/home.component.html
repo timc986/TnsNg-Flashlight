@@ -4,14 +4,40 @@
     </ActionBar>
 </Page.actionBar>
 
-<GridLayout>
-    <!-- Add your page content here -->
-    <!-- <Button *ngIf="isOn" text="Turn Off" (tap)="onTap($event)"></Button>
+<!-- <GridLayout> -->
+<!-- Add your page content here -->
+<!-- <Button *ngIf="isOn" text="Turn Off" (tap)="onTap($event)"></Button>
     <Button *ngIf="!isOn" text="Turn On" (tap)="onTap($event)"></Button> -->
 
-    <Button *ngIf="isOn" class="fas" style="font-size: 50em; color: yellow" text="&#xf0eb;"
+<!-- <Button *ngIf="isOn" class="fas" style="font-size: 50em; color: yellow" text="&#xf0eb;"
         (tap)="onTap($event)"></Button>
 
     <Button *ngIf="!isOn" class="fas" style="font-size: 50em; color: gray" text="&#xf0eb;"
-        (tap)="onTap($event)"></Button>
+        (tap)="onTap($event)"></Button> -->
+
+<!-- <GridLayout id="btnFab" (tap)="onTap($event)"></GridLayout>
+</GridLayout> -->
+
+
+
+<!-- <GridLayout *ngIf="!isOn" id="btnFab">
+    <Label class="fas" style="font-size: 50em; color: gray" text="&#xf0eb;" (tap)="onTap($event)"></Label>
+</GridLayout>
+
+<GridLayout *ngIf="isOn" id="btnFab" (tap)="onTap($event)">
+    <Label class="fas" style="font-size: 50em; color: yellow" text="&#xf0eb;" (tap)="onTap($event)"></Label>
+</GridLayout> -->
+
+<!-- <FlexboxLayout flexDirection="column-reverse" justifyContent="space-around" alignItems="stretch">
+    <Label alignSelf="center" *ngIf="!isOn" class="fas" style="font-size: 50em; color: gray" text="&#xf011;"
+        (tap)="onTap($event)"></Label>
+    <Label alignSelf="center" *ngIf="isOn" class="fas" style="font-size: 50em; color:#fff705" text="&#xf011;"
+        (tap)="onTap($event)"></Label>
+</FlexboxLayout> -->
+
+<GridLayout verticalAlignment="center">
+    <Label id="onoffswitch" *ngIf="!isOn" class="fas" style="font-size: 50em; color: gray" text="&#xf011;"
+        (tap)="onTap($event)"></Label>
+    <Label id="onoffswitch" *ngIf="isOn" class="fas" style="font-size: 50em; color: yellow" text="&#xf011;"
+        (tap)="onTap($event)"></Label>
 </GridLayout>
